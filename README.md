@@ -9,7 +9,7 @@
 - [Part 1: About the GuruSetu Pilot](#part-1-about-the-gurusetu-pilot)
 - [Part 2: About the ViBe Platform](#part-2-about-the-vibe-platform)
 
----
+----
 
 ## Part 1: About the GuruSetu Pilot
 
