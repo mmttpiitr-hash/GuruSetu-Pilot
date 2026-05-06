@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    
+    <!-- Theme stylesheet -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="{{ '/assets/css/index.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="project-name">{{ site.title }}</h1>
+        <p class="project-tagline">{{ site.description }}</p>
+      </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li><a href="{{ '/' | relative_url }}" class="navbar-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
+        <li><a href="{{ '/faq/' | relative_url }}" class="navbar-link {% if page.permalink == '/faq/' %}active{% endif %}">FAQ</a></li>
+      </ul>
+    </nav>
+      
+      <main class="main-content">
+        {{ content }}
+      </main>
+      
+      <footer class="site-footer">
+        <span class="site-footer-credits">This site is powered by <a href="https://jekyllrb.com/">Jekyll</a> with the <a href="https://github.com/pages-themes/cayman">Cayman</a> theme.</span>
+      </footer>
+    </div>
+  </body>
+</html>
